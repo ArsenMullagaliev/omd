@@ -16,7 +16,7 @@ MESSAGES_NO_UMBRELLA = {
 
 
 def get_weather():
-    key = randint(0,2)
+    key = randint(0, 2)
     return WEATHER[key]
 
 
@@ -59,7 +59,7 @@ def step3(umbrella_taken):
     return outcome(umbrella_taken, forecast)
 
 
-def outcome(umbrella_taken , forecast):
+def outcome(umbrella_taken, forecast):
     weather = get_weather()
 
     if umbrella_taken:
